@@ -13,4 +13,9 @@ export class AppComponent {
     var test: any = {};
     console.log("TEST result >>> ", test[0][1]);
   }
+
+  testThrowError() {
+    console.error("Error");
+    throw Error('URL Exception');
+  }
 }
