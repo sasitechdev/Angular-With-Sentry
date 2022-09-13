@@ -28,4 +28,8 @@ export class AppComponent {
     console.error("Error");
     throw Error('Page Not Found Error');
   }
+
+  onSubmit() {
+    console.log("Success");
+  }
 }
