@@ -8,14 +8,24 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ShipIt: Angular-With-Sentry';
 
-  testBtnClicked() {
+  generateTypeError() {
     console.error("Error");
     var test: any = {};
     console.log("TEST result >>> ", test[0][1]);
   }
 
-  testThrowError() {
+  throwURLError() {
     console.error("Error");
-    throw Error('URL Exception');
+    throw Error('URL Error');
+  }
+
+  throwNaNError() {
+    console.error("Error");
+    throw Error('NaN Error');
+  }
+
+  throwPageNotFoundError() {
+    console.error("Error");
+    throw Error('Page Not Found Error');
   }
 }
