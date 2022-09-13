@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Angular-With-Sentry';
+  title = 'ShipIt: Angular-With-Sentry';
 
   testBtnClicked() {
     console.error("Error");
     var test: any = {};
-    console.log("TEST result >>> ", test[0]);
+    console.log("TEST result >>> ", test[0][1]);
   }
 }
