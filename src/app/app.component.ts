@@ -11,6 +11,6 @@ export class AppComponent {
   testBtnClicked() {
     console.error("Error");
     var test: any = {};
-    console.log("TEST result >>> ", test);
+    console.log("TEST result >>> ", test[0]);
   }
 }
