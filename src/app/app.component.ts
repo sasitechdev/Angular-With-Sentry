@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-With-Sentry';
+
+  testBtnClicked() {
+    console.error("Error");
+    var test: any = {};
+    console.log("TEST result >>> ", test['test']['welcome']);
+  }
 }
