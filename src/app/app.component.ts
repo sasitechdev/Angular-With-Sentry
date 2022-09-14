@@ -14,19 +14,19 @@ export class AppComponent {
     console.log("TEST result >>> ", test[0][1]);
   }
 
-  throwURLError() {
+  throwArithmeticException() {
     console.error("Error");
-    throw Error('URL Error');
+    throw Error('Arithmetic Exception');
   }
 
-  throwNaNError() {
+  throwNaNException() {
     console.error("Error");
-    throw Error('NaN Error');
+    throw Error('NaN Exception');
   }
 
-  throwPageNotFoundError() {
+  throwURIError() {
     console.error("Error");
-    throw Error('Page Not Found Error');
+    throw Error('URI malformed');
   }
 
   onSubmit() {
