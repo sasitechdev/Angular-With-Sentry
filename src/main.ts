@@ -7,6 +7,7 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 Sentry.init({
+  release: "release-2022i8",
   dsn: "https://50dcbdd31d4847ca98c852e398f76ca1@o1407271.ingest.sentry.io/6742054",
   integrations: [
     new BrowserTracing({
